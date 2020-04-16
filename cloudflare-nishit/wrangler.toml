@@ -1,6 +1,6 @@
 name = "cloudflare-fullstack-app"
 type = "javascript"
-account_id = "bb06716a08eb52f7ca1910d352497355"
+account_id = "bb06716a08eb52f7ca1910d352497355" #generated account id
 workers_dev = true
 route = ""
 zone_id = ""
