@@ -1,4 +1,10 @@
 
+
+/* 
+  index.js 
+  Author: Nishit Doshi
+  Last Modified: April 16th 2020 
+*/
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
 })
