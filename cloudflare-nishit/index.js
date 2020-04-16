@@ -1,5 +1,3 @@
-
-
 /* 
   index.js 
   Author: Nishit Doshi
