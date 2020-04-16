@@ -12,12 +12,19 @@ async function handleRequest(request) {
   let response = await fetch(url)
 
   if(response.ok) {
-    console.log("Response")
     let payload = await response.json()
+    console.log(payload)
     console.log(payload.variants[0], payload.variants[1])
-  }
-
-  return new Response('Response from the provided URL!', {
+    let singleURLResponse = await fetch(payload.variants[0])
+    console.log(singleURLResponse)
+    return new Response('Response from the provided URL!', {
     headers: { 'content-type': 'text/plain' },
   })
+  } else {
+    return new Response('Failed to get response from the provided URL!', {
+      headers: { 'content-type': 'text/plain' },
+    })
+  }
+
+  
 }
